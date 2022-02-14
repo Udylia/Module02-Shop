@@ -137,6 +137,9 @@ body {
         box-shadow: 30px 55px 60px -60px rgba(54, 57,54,.7);
         border-radius: 100%;
     }
+    &__text {
+        padding-top: 4rem;
+    }
     &__btn {
         background-color: transparent;
         border: none;
@@ -226,9 +229,6 @@ body {
         width: 17.8rem;
         z-index: -1;
     }
-}
-.main__text {
-    margin-top: 4rem;
 }
 .title {
     font-family: $font-cormorant;
