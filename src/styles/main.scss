@@ -473,10 +473,10 @@ body {
         opacity: .4;
     }
     &__plus {
-        pointer-events: none;
         background-image: url(../images/plus-counter.svg);
         background-size: 20px 11px;
         background-repeat: no-repeat;
+        
     }
     &__input {
         text-align: center;
@@ -585,11 +585,15 @@ body {
         letter-spacing: .1rem;
         text-transform: uppercase;
         opacity: .8;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
         &::before {
             content: "";
             display: block;
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 3rem;
+            height: 3rem;
             background-image: url(../images/refresh.png);
             background-size: cover;
             background-repeat: no-repeat;
