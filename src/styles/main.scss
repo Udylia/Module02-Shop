@@ -15,6 +15,10 @@ body {
     font-size: 1.6rem;
     font-family: $font-jost;
     color: $green;
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -37,6 +41,7 @@ body {
     &__link {
         color: $green;
         text-decoration: none;
+        transition: .2s;
         &:hover {
             color: $orange;
         }
@@ -46,6 +51,7 @@ body {
         font-weight: 500;
         text-decoration: none;
         letter-spacing: .12rem;
+        transition: .2s;
         &:hover {
             color: $orange;
         }
@@ -62,6 +68,8 @@ body {
         background-size: 1.7rem 1.5rem;
         position: relative;
         border: 1px solid $orange;
+        transition: .2s;
+        cursor: pointer;
         &:hover {
             background-color: $green;
             border: 1px solid $green;
@@ -80,9 +88,14 @@ body {
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 12rem;
+    flex-basis: 12rem;
     height: 3.2rem;
     margin-right: 45px;
+    &_footer {
+        flex-basis: 18rem;
+        height: 4.8rem;
+        margin-top: .8rem;
+    }
 }
 .container {
     max-width: 1440px;
@@ -91,10 +104,6 @@ body {
     padding-right: 15px;
 }
 .main {
-    background-image: url(../images/main.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     position: relative;
     padding-bottom: 187px;
     z-index: 0;
@@ -148,13 +157,13 @@ body {
         position: absolute;
         color: $green;
         text-align: left;
+        transition: .2s;
+        cursor: pointer;
         &:hover {
-            
                 &::before {
                     background-color: $orange;
                     box-shadow: 0 0 0 4px $white, 0 0 0 5px $orange;
-                }    
-            
+                }      
         }
         &::before {
             content: '';
@@ -275,6 +284,10 @@ body {
     border-radius: 3.8rem;
     display: inline-block;
     border: none;
+    transition: .2s;
+    &:hover {
+        background-color: #bf601f;
+    }
     &_max {
         padding: 2.4rem 5rem;
     }
@@ -285,10 +298,6 @@ body {
     }
 }
 .offer {
-    background-image: url(../images/offer.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 12.8rem;
     &__text {
@@ -296,7 +305,6 @@ body {
         max-width: 700px;
     }
 }
-
 .slider {
     overflow: hidden;
     padding-top: 90px;
@@ -380,6 +388,7 @@ body {
             gap: 2rem;
             letter-spacing: .1rem;
             opacity: .8;
+            transition: .2s;
             &:hover {
                 opacity: 1;
             }
@@ -491,10 +500,6 @@ body {
     }
 }
 .about {
-    background-image: url(../images/about.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     padding-top: 3.7rem;
     padding-bottom: 15rem;
     &__box {
@@ -555,10 +560,6 @@ body {
 
 }
 .trends {
-    background-image: url(../images/trends.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     padding-top: 3.9rem;
     padding-bottom: 19rem;
     &__text {
@@ -566,10 +567,6 @@ body {
     }
 }
 .catalog {
-    background-image: url(../images/catalog.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     padding-bottom: 1rem;
     &__list {
         margin-top: 8.5rem;
@@ -587,6 +584,7 @@ body {
         letter-spacing: .1rem;
         text-transform: uppercase;
         opacity: .8;
+        transition: .2s;
         cursor: pointer;
         &:hover {
             opacity: 1;
@@ -620,6 +618,7 @@ body {
         text-decoration: none;
         border-radius: 4rem;
         display: block;
+        transition: .2s;
         &:hover {
             border: 1px solid $orange;
             color: $orange;
@@ -679,10 +678,6 @@ body {
     }
 }
 .delivery {
-    background-image: url(../images/delivery.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     padding-top: 6.8rem;
     padding-bottom: 6rem;
     &__box {
@@ -730,6 +725,8 @@ body {
         background-size: cover;
         background-position: center center;
         opacity: .4;
+        transition: .2s;
+        cursor: pointer;
         &:hover {
             opacity: 1;
         }
@@ -785,6 +782,10 @@ body {
             display: flex;
             align-items: center;
             gap: 3rem;
+            transition: .2s;
+            &:hover {
+                color: $orange;
+            }
             &::before {
                 content: '';
                 background-repeat: no-repeat;
@@ -857,6 +858,98 @@ body {
         color: rgba($green, .6);
         text-decoration: none;
         border-bottom: 1px solid #ecedec;
+    }
+}
+footer {
+    border-top: 1px solid #d4d6cf;
+    padding-top: 7.9rem;
+    padding-bottom: 7rem;
+}
+.footer {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.8rem;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 66.5%;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    &__item {
+        margin-bottom: 2.6rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        color: $green;
+        text-decoration: none;
+        transition: .2s;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &__tel {
+        font-size: 2.7rem;
+        display: block;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        color: rgba($green, .6);
+        margin-top: 4rem;
+    }
+    &__author {
+        color: rgba($green, .6);
+        text-decoration: none;
+        transition: .2s;
+        &:hover {
+            color: rgba($green, 1);
+        }
+    }
+}
+.footer-social {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    &__link {
+        display: block;
+        width: 4.6rem;
+        height: 4.6rem;
+        border: 2px solid $green;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .8;
+        transition: .2s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__vk {
+        background-image: url(../images/vk.svg);
+        background-size: 2.3rem;
+    }
+    &__inst {
+        background-image: url(../images/inst.svg);
+        background-size: 1.8rem;
+    }
+    &__fb {
+        background-image: url(../images/fb.svg);
+        background-size: 1.8rem;
     }
 }
   
