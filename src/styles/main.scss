@@ -144,8 +144,8 @@ body {
     }
     &__image {
         width: 93%;
-        box-shadow: 30px 55px 60px -60px rgba(54, 57,54,.7);
         border-radius: 100%;
+        animation: shadow 5s linear infinite;
     }
     &__text {
         padding-top: 4rem;
@@ -950,6 +950,17 @@ footer {
     &__fb {
         background-image: url(../images/fb.svg);
         background-size: 1.8rem;
+    }
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba($green, .5);
+    }
+    50% {
+        box-shadow: 20px 20px 33px 0 rgba($green, .5);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($green, .5);
     }
 }
   
