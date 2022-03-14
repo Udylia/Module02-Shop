@@ -23,13 +23,15 @@ body {
 
 .header {
     max-width: 1440px;
-    margin: 0 auto 5rem;
+    margin: 0 auto 4.8rem;
     padding: 4rem 15px 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8rem;
     &__menu {
-        flex-basis: 59%;
+        flex-grow: 1;
+        margin-left: 4rem;
     }
     &__nav {
         display: flex;
@@ -50,15 +52,17 @@ body {
         color: $green;
         font-weight: 500;
         text-decoration: none;
-        letter-spacing: .12rem;
+        letter-spacing: .13rem;
+        text-align: right;
         transition: .2s;
+        flex-basis: 200px;
         &:hover {
             color: $orange;
         }
     }
     &__cart {
         display: block;
-        width: 4rem;
+        flex-basis: 4rem;
         height: 4rem;
         border-radius: 100%;
         background-color: $orange;
@@ -90,7 +94,6 @@ body {
     background-size: contain;
     flex-basis: 12rem;
     height: 3.2rem;
-    margin-right: 45px;
     &_footer {
         flex-basis: 18rem;
         height: 4.8rem;
