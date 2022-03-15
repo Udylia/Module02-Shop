@@ -302,7 +302,7 @@ body {
         display: none;
         @media (max-width: $r_tab) {
             display: block;
-            max-width: 300px;
+            max-width: 400px;
             margin: 0 auto;
             margin-top: 3rem;
         }
@@ -530,13 +530,14 @@ body {
     overflow: hidden;
     padding-top: 9.4rem;
     @media (max-width: $r_tab) {
-        max-width: 450px;
+        width: 450px;
         margin: 0 auto;
         padding-top: 5.4rem;
         padding-bottom: 6rem;
      }
     &_white {
         padding-top: 100px;
+        overflow: hidden;
     }
 }
 
@@ -973,6 +974,9 @@ body {
         color: $green;
         margin-top: 1.7rem;
         margin-bottom: 0;
+        @media (max-width: $r_tab) {
+            font-size: 2.5rem;
+        }
     }
     &__description {
         color: rgba($green, .7);
