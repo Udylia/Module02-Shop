@@ -215,13 +215,13 @@ body {
     position: relative;
     padding-bottom: 187px;
     z-index: 0;
+    @media (max-width: $r_tab) {
+        padding-bottom: 127px;
+    }
     &__item {
         margin-left: 12rem;
         max-width: 378px;
         margin-top: 6rem;
-        @media (max-width: $r_desk_1280) {
-            margin-left: 8rem;
-        }
         @media (max-width: $r_desk_1280) {
             margin-left: 8rem;
         }
@@ -518,6 +518,9 @@ body {
 .offer {
     padding-top: 2rem;
     padding-bottom: 12.8rem;
+    @media (max-width: $r_tab) {
+        padding-top: 0;
+    }
     &__text {
         margin-top: 6rem;
         max-width: 700px;
@@ -1083,6 +1086,9 @@ body {
         @media (max-width: $r_desk_hd) {
             gap: 10%;
         }
+        @media (max-width: $r_tab) {
+            flex-direction: column;
+        }
         &__text {
             max-width: 400px;
             flex-grow: 1;
@@ -1124,6 +1130,9 @@ body {
         &__item {
             font-size: 2.4rem;
             margin-top: 7px;
+            @media (max-width: $r_tab) {
+                font-size: 1.6rem;
+            }
         }
         &__link {
             color: $green;
