@@ -11,7 +11,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
   var swiper = new Swiper(".offerSwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 15,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -30,7 +30,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
         slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      768: {
+      600: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
@@ -43,7 +43,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
   var swiper = new Swiper(".trendsSwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 15,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -62,7 +62,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
         slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      768: {
+      600: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
