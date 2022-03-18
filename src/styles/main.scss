@@ -1155,6 +1155,9 @@ body {
             padding-left: 0;
             margin-top: 6rem;
             margin-bottom: 0;
+            @media (max-width: $r_tab_900) {
+                margin-bottom: 3rem;
+            }
             @media (max-width: $r_tab) {
                font-size: 1.6rem;
                display: flex;
@@ -1359,6 +1362,10 @@ footer {
     padding-left: 0;
     margin-top: 3rem;
     margin-bottom: 0;
+    @media (max-width: $r_desk_hd) {
+        justify-content: center;
+        gap: 3rem;
+    }
     &__link {
         display: block;
         width: 4.6rem;
